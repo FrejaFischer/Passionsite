@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Slikfix</title>
+  </head>
+  <body>
+    <header>
+      <!--Her skal der være et logo og en kurv-->
+      <a href="index.html"><img src="imgs/slikfix_logo_ny.webp" alt="logo" id="logo_img" /></a>
+      <a href="index.html"><img src="imgs/kurv.webp" alt="kurven" id="kurven" /></a>
+    </header>
+    <main>
+      <!--Her vises kategorierne-->
+      <section id="categori_section">
+        <div id="categories">
+          <button><h2 data-category="vingummier">Vingummier</h2></button>
+          <button><h2 data-category="surt">Surt slik</h2></button>
+          <button><h2 data-category="chokolade">Chokolade</h2></button>
+          <button><h2 data-category="karamel">Karamel</h2></button>
+          <button><h2 data-category="lakrids">Lakrids</h2></button>
+          <button><h2 data-category="skum">Skum</h2></button>
+        </div>
+      </section>
+
+      <div id="welcome_img">
+        <!-- her er velkomstbilledet -->
+      </div>
+
+      <section id="products">
+        <!-- <div class="candy_card">
+          <img src="img/testimg.png" alt="Slik billede" class="candy_img" />
+          <p class="price">
+            35g / 10 stk. <br />
+            6,- DKK
+          </p>
+          <h2>Chokoladebar</h2>
+          <button class="add_button">PUT I POSEN</button>
+          <a class="more_here" href="product.html">Læs mere her</a>
+        </div>
+        <div class="candy_card">
+          <img src="img/testimg.png" alt="Slik billede" class="candy_img" />
+          <p class="price">
+            35g / 10 stk. <br />
+            6,- DKK
+          </p>
+          <h2>Chokoladebar</h2>
+          <button class="add_button">PUT I POSEN</button>
+          <a class="more_here" href="product.html">Læs mere her</a>
+        </div>
+        <div class="candy_card">
+          <img src="img/testimg.png" alt="Slik billede" class="candy_img" />
+          <p class="price">
+            35g / 10 stk. <br />
+            6,- DKK
+          </p>
+          <h2>Chokoladebar</h2>
+          <button class="add_button">PUT I POSEN</button>
+          <a class="more_here" href="product.html">Læs mere her</a>
+        </div> -->
+        <!--Her skal hvert stykke slik card / .candy_card blive kopiret til-->
+      </section>
+      <section id="products2">
+        <!--Her skal hvert stykke slik card / .candy_card blive kopiret til-->
+      </section>
+      <!-- <section id="readmore"> -->
+      <!--Her skal slikindholds-vinduet dukke op ved klik på læs mere-->
+      <!-- </section> -->
+    </main>
+    <template id="candy_product">
+      <div class="candy_card">
+        <!--her er den template hvor slik card bliver lavet i-->
+        <img src="img/testimg.png" alt="Slik billede" class="candy_img" />
+        <p class="price">
+          35g / 10 stk. <br />
+          6,- DKK
+        </p>
+        <h2>name</h2>
+        <button class="add_button">PUT I POSEN</button>
+        <!-- <img src="img/putikurv.png" alt="plus minus" class="plus_minus"> -->
+        <a class="more_here" href="product.html">Læs mere her</a>
+      </div>
+    </template>
+
+    <footer>
+      <section>
+        <div class="footer_grid">
+          <div>
+            <img class="footer_img" src="imgs/slikfix_logo_ny.webp" alt="#" />
+          </div>
+          <div>
+            <h3>Information</h3>
+            <div class="plist">
+              <p>Om os</p>
+              <p>Persondatapolitik</p>
+              <p>Cookie- og Privatlivspolitik</p>
+              <p>Handelsbetingelser</p>
+              <p>Gavekort</p>
+            </div>
+          </div>
+
+          <div>
+            <h3>Kontakt</h3>
+            <p class="kontaktp"><a href="form.html">Ønsker til shoppen</a></p>
+            <div class="adresse">
+              <p>Guldbergsgade 29N</p>
+              <p>2200 København N</p>
+            </div>
+            <div class="tlf_mail">
+              <p><img class="phonelogo" src="imgs/phone.webp" alt="phonelogo" /> 1234 5678</p>
+              <p><img src="imgs/mail.webp" alt="maillogo" /> slikfix@slikfix.dk</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="logo_flex">
+          <img class="logo_img" src="imgs/mp.webp" alt="mobilepaylogo" />
+          <img class="logo_img" src="imgs/dk.webp" alt="dankort" />
+          <img class="logo_img" src="imgs/visa.webp" alt="visa" />
+          <img class="logo_img" src="imgs/mc.webp" alt="mastercard" />
+        </div>
+      </section>
+
+      <p class="copyp">Copyright © Gruppe 4. Multimediedesign KEA.</p>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

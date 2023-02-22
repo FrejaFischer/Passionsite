@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffbfc0;
+}
+
+@font-face {
+  font-family: "Montserrat_tekst";
+  src: url("../font/Montserrat/static/Montserrat-Light.ttf");
+}
+@font-face {
+  font-family: "Montserrat_overskrift";
+  src: url("../font/Montserrat/static/Montserrat-Medium.ttf");
+}
+
+p,
+a {
+  font-family: "Montserrat_tekst";
+}
+
+h2,
+h3 {
+  font-family: "Montserrat_overskrift";
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  align-self: center;
+  margin-right: 5%;
+}
+#logo_img {
+  height: 100px;
+  margin-left: 8%;
+}
+#kurven {
+  width: 50px;
+}
+
+/* Categories */
+@media (min-width: 800px) {
+  #categories {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+  }
+}
+
+#categories button {
+  background-color: #ee3e55;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-radius: 69px;
+  width: 130px;
+  margin-top: 5px;
+  border-style: none;
+}
+#categories button:hover {
+  scale: 1.05;
+}
+
+/* velkommen image*/
+#welcome_img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-image: url("../img/slikfix_topscroll.webp");
+  background-size: cover;
+  left: 0px;
+  top: 0px;
+}
+
+/* candy card */
+
+@media (min-width: 800px) {
+  #products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #products2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.candy_img {
+  width: 102%;
+  height: 192px;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  left: 0%;
+  bottom: 24%;
+  border-radius: 100px;
+  grid-row: 1/4;
+  margin-bottom: 16px;
+  margin-top: 0px;
+}
+
+.price {
+  color: white;
+  background-color: #ffbfc0;
+  border-radius: 46px;
+  width: 90px;
+  height: 60px;
+  text-align: center;
+  text-justify: distribute;
+  justify-self: center;
+  margin-top: -30px;
+  margin-bottom: 2px;
+  padding-top: 15px;
+  grid-row: 4/6;
+  justify-self: flex-start;
+  z-index: 1;
+}
+
+.candy_card {
+  background-color: #ee3e55;
+  height: 300px;
+  width: 215px;
+  margin: 52px;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.candy_card h2 {
+  font-size: 1em;
+  grid-row: 6/7;
+  justify-self: center;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.add_button {
+  color: white;
+  background-color: #ffbfc0;
+  grid-row: 7/8;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 77px;
+  border-style: double;
+  border-inline-color: #ee3e55;
+  border-block-color: #ee3e55;
+  border-width: thick;
+}
+.add_button:hover {
+  color: transparent;
+  background-image: url("../img/putikurv-TEST.png");
+  background-size: cover;
+  height: 77px;
+}
+
+/* .plus_minus {
+  z-index: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-self: center;
+  width: 91%;
+  position: relative;
+} */
+
+.more_here {
+  background-color: transparent;
+  border-style: none;
+  grid-row: 8/9;
+  justify-self: end;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  color: white;
+}
+.more_here:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+/* -------Animationer------------ */
+.zoom_out {
+  animation-name: zoom_out;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+}
+@keyframes zoom_out {
+  0% {
+    translate: 0% 0%;
+    scale: 1;
+    opacity: 100px;
+  }
+  100% {
+    translate: -70% -70%;
+    scale: 0;
+    opacity: 0;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.appear {
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100px;
+  }
+}
+
+/* -------- Footer --------- */
+footer {
+  background-color: #ee3e55;
+  color: #ffbcbf;
+  text-align: left;
+  padding-top: 5rem;
+  margin-top: 5rem;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+}
+
+.plist {
+  color: #ffbcbf;
+  list-style-type: none;
+  text-decoration: underline;
+  line-height: 1rem;
+}
+
+.kontaktp a {
+  color: #ffbcbf;
+  list-style-type: none;
+  text-decoration: underline;
+  line-height: 1rem;
+}
+
+.logo_flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo_img {
+  width: 5%;
+  height: auto;
+}
+
+.footer_img {
+  width: 90%;
+  height: auto;
+  text-align: center;
+}
+
+.copyp {
+  font-size: 0.75rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 800px) {
+  .footer_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 2rem;
+    list-style-type: none;
+    justify-content: space-around;
+  }
+}
